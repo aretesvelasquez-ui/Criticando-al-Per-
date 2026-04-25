@@ -1,0 +1,12 @@
+[build]
+  base = "app/app/backend/app/frontend/app/frontend"
+  command = "yarn build"
+  publish = "build"
+
+[build.environment]
+  REACT_APP_BACKEND_URL = "https://debate-politico-pe.preview.criticandoalperú.com"
+
+[dev]
+  command = "cd app/app/backend/app/frontend/app/frontend && yarn start"
+  port = 3000
+  framework = "create-react-app"
